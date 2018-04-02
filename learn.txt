@@ -7,10 +7,16 @@ git config user.email 使用者email
     .暂存区有文件的时候，查看工作区和暂存区的差别
     .暂存区没有文件的时候，查看工作区和上次提交到版本库中的文件的差别
     .git diff HEAD --readme.txt 查看版本库中readme.txt文件和工作区中的readme.txt文件的区别
-    HEAD指向版本库中的当前版本
+     HEAD指向版本库中的当前版本
+    .git diff cached 查看暂存区和本地库最新版本间的区别
+
 4. git add  文件修改提交到暂存区
 5. git commit 提交更改，即把暂存区的内容提交到当前分支（参数 -m 后面跟备注）
 6. git log 查看历史提交记录，后面有很多参数可用，比如 --pretty=oneline(每个提交信息单行显示)
 7. git reset --hard HEAD^ (回退到上一个版本，HEAD^^回退到上上个版本，HEAD~100回退到前100个版本)
    git reset --hard 1e650aa (1e650aa是提交版本的哈希，回到哈希值为1e650aa的版本)
    git reflog  记录每次操作的命令，可用获得各个版本的哈希值
+8. git checkout -- readme.txt 把readme.txt文件在工作区的修改全部撤销
+   .readme.txt 修改后还没有添加到暂存区，那么撤销修改后就回到和版本库一模一样的状态
+   .readme.txt 已经添加到暂存区后，又作了修改，撤销修改后就回到了添加到暂存区后的状态
+   .即，回到最近一次 git commit 或者 git add前的状态
