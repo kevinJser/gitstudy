@@ -32,4 +32,6 @@ git config user.email 使用者email
 17. 合并冲突解决, 本地修改后 git add ...  git commit ... 最后删除临时分支
 18. 强制禁用Fast forward模式合并(Fast forward模式下，删除分支后，会丢掉分支信息)
     禁用后，git会在merge时生成一个新的commit，这样就可以从分支历史上看到分支信息
+19. bug分支,由于git中分支功能的强大，因此，每个bug都是可以通过一个新的临时分支来修复，修复后合并分支，然后删除临时分支
+    
     
