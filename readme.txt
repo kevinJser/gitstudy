@@ -3,4 +3,4 @@ Git is free software distributed under the GPL.
 Git has amutable index called stage.
 Git tracks changes.
 Git diff.
-Creating a new branch is quick & simple.
+Creating a new branch is quick and simple.
