@@ -39,5 +39,8 @@ git config user.email 使用者email
     git stash drop  来删除保存的工作内容
     git stash pop 恢复的同时也把stash内容删除了
 21. feature分支(实验性分支,比如添加新功能的时候写的一些实现新的代码)，完成后合并删除
+    git branch -D feature 强制删除feature分支，没有合并过的分支无法普通删除，只能强制删除
+22. git remote 查看远程仓库 
+    git remote -v 详细信息
     
     
