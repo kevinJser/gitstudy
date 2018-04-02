@@ -16,3 +16,14 @@ git config user.email 使用者email
    git reflog  记录每次操作的命令，可用获得各个版本的哈希值
 8. git checkout --readme.txt 把工作区的修改全被撤销，即，让这个文件回到最近一次git commit 或者 git add 后 的状态
 9. git reset HEAD readme.txt 把暂存区的修改全部撤销掉,重新放回工作区
+10. 远程仓库  
+    创建ssh key $ ssh-keygen -t ras -C "youremail@example.com",使用默认值就可以了
+    在用户目录中找到.ssh目录 id_rsa.pub是公钥
+    在github中的SSH key中 在文本框里粘贴id_rsa.pub的内容
+    本地仓库和github仓库关联，本地仓库运行 $ git remote add origin git@github.com:kevinJser/gitstudy.git (后面的为github上仓库的ssh地址)
+11. git push origin master 提交
+12. git clone ......  克隆
+
+13. git checkout -b dev  创建分支dev
+    相当于两步操作 git branch dev    git checkout dev
+14. git branch 查看当前分支
