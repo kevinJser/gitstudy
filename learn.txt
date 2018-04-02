@@ -29,3 +29,7 @@ git config user.email 使用者email
 14. git branch 查看当前分支
 15. git merge dev  合并指定分支到当前分支 (Fast-forward,快进模式) 也就是直接把master指向dev的当前提交
 16. git branch -d dev  删除dev分支
+17. 合并冲突解决, 本地修改后 git add ...  git commit ... 最后删除临时分支
+18. 强制禁用Fast forward模式合并(Fast forward模式下，删除分支后，会丢掉分支信息)
+    禁用后，git会在merge时生成一个新的commit，这样就可以从分支历史上看到分支信息
+    
