@@ -4,3 +4,4 @@ Git has amutable index called stage.
 Git tracks changes.
 Git diff.
 Creating a new branch is quick and simple.
+-no-ff
