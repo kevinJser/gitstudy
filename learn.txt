@@ -27,3 +27,5 @@ git config user.email 使用者email
 13. git checkout -b dev  创建分支dev
     相当于两步操作 git branch dev    git checkout dev
 14. git branch 查看当前分支
+15. git merge dev  合并指定分支到当前分支 (Fast-forward,快进模式) 也就是直接把master指向dev的当前提交
+16. git branch -d dev  删除dev分支
