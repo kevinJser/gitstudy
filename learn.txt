@@ -2,7 +2,7 @@ git config user.name  使用者name
 git config user.email 使用者email
 
 1. git init   初始化git仓库
-2. git status 查看仓库当前的状态
+2. git status 查看仓库当前的状态(暂存区和本地仓库)
 3. git diff 
     .暂存区有文件的时候，查看工作区和暂存区的差别
     .暂存区没有文件的时候，查看工作区和上次提交到版本库中的文件的差别
