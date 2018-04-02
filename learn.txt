@@ -1,0 +1,11 @@
+git config user.name  使用者name
+git config user.email 使用者email
+
+1. git init   初始化git仓库
+2. git status 查看仓库当前的状态
+3. git diff 查看工作区和暂存区的差别
+4. git add
+5. git log 查看历史提交记录，后面有很多参数可用，比如 --pretty=oneline(每个提交信息单行显示)
+6. git reset --hard HEAD^ (回退到上一个版本，HEAD^^回退到上上个版本，HEAD~100回退到前100个版本)
+   git reset --hard 1e650aa (1e650aa是提交版本的哈希，回到哈希值为1e650aa的版本)
+   git reflog  记录每次操作的命令，可用获得各个版本的哈希值
