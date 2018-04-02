@@ -38,4 +38,6 @@ git config user.email 使用者email
     git stash apply stash@{0}(这个是 git stash list 中查看到的存储内容地址) 恢复工作内容，后面需要使用
     git stash drop  来删除保存的工作内容
     git stash pop 恢复的同时也把stash内容删除了
+21. feature分支(实验性分支,比如添加新功能的时候写的一些实现新的代码)，完成后合并删除
+    
     
