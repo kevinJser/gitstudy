@@ -47,6 +47,19 @@ git config user.email 使用者email
 24. git pull 的时候需要指定本地分支和远程仓库分支的链接
     git branch --set-upstream dev origin/dev,然后再git pull
     然后就是手动解决冲突，然后再push
-
+25. git tag v1.0 为当前分支打上标签
+    git tag 查看当前分支的标签
+    要为之前的commit打标签：
+    git log --pretty=oneline --abbreve-commit 查看各个commit的哈希号
+    git tag v0.9 commit号
+    git tag 展示出来的标签不是按照时间顺序列出，而是按照字母排序
+    git show v0.9  查看标签信息
+    git tag -a v0.1 -m "version 0.1 released" commit号
+    git tag -d v0.1 删除标签
+    git push origin <tagname> 
+    git push origin --tags 推送所有尚未推送到远程的本地标签
+    删除远程标签:
+    git tag -d v0.9 先本地删除
+    git push origin :refs/tags/v0.9 从远程删除
     
     
