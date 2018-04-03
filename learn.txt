@@ -21,7 +21,7 @@ git config user.email 使用者email
     在用户目录中找到.ssh目录 id_rsa.pub是公钥
     在github中的SSH key中 在文本框里粘贴id_rsa.pub的内容
     本地仓库和github仓库关联，本地仓库运行 $ git remote add origin git@github.com:kevinJser/gitstudy.git (后面的为github上仓库的ssh地址)
-11. git push origin master 提交
+11. git push origin master 提交推送 向远程仓库origin推送master分支
 12. git clone ......  克隆
 
 13. git checkout -b dev  创建分支dev
@@ -42,5 +42,11 @@ git config user.email 使用者email
     git branch -D feature 强制删除feature分支，没有合并过的分支无法普通删除，只能强制删除
 22. git remote 查看远程仓库 
     git remote -v 详细信息
+23. 当推送失败的时候，一般是因为和远程仓库有了冲突（比如，你的工作伙伴也修改了你推送的那个分支，并且已经推送到了远程仓库中）
+    这时候，需要先pull下来，然后在本地合并，解决冲突.
+24. git pull 的时候需要指定本地分支和远程仓库分支的链接
+    git branch --set-upstream dev origin/dev,然后再git pull
+    然后就是手动解决冲突，然后再push
+
     
     
